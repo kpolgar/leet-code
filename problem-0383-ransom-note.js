@@ -11,10 +11,13 @@ canConstruct("a", "b") -> false
 canConstruct("aa", "ab") -> false
 canConstruct("aa", "aab") -> true*/
 
+//My Solution
+
 /*STATS
 Runtime: 88 ms, faster than 44.52% of JavaScript online submissions for Ransom Note.
 Memory Usage: 37.1 MB, less than 100.00% of JavaScript online submissions for Ransom Note.
 */
+
 var canConstruct = function(ransomNote, magazine) {
   let map = {};  
   for(let i = 0; i < magazine.length; i++) {
