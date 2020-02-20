@@ -49,4 +49,3 @@ var fib = function(N) { //O(n)
   } 
   return fibArray[N]
 } 
-
