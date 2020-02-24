@@ -27,7 +27,7 @@ Note:
 1 <= S.length <= 10000
 S only contains characters "I" or "D".*/
 
-/*Runtime: 76 ms, faster than 90.00% of JavaScript online submissions for DI String Match.
+/*STATS Runtime: 76 ms, faster than 90.00% of JavaScript online submissions for DI String Match.
 Memory Usage: 37.1 MB, less than 100.00% of JavaScript online submissions for DI String Match.*/
 
 var diStringMatch = function(S) {
