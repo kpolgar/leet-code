@@ -37,3 +37,14 @@ var dayOfTheWeek = function(day, month, year) {
     let date = d.getDay();
     return days[date];
 };
+
+//Second Attempt
+
+/*STATS Runtime: 44 ms, faster than 97.79% of JavaScript online submissions for Day of the Week.
+Memory Usage: 33.9 MB, less than 100.00% of JavaScript online submissions for Day of the Week.*/
+
+var dayOfTheWeek = function(day, month, year) {
+    let weekDay = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+    let dt2 = new Date(year+'-'+month+'-'+day);
+    return weekDay[dt2.getDay()]
+};
