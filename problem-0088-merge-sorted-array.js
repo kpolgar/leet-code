@@ -14,8 +14,8 @@ nums2 = [2,5,6],       n = 3
 
 Output: [1,2,2,3,5,6]*/
 
-/**STATS Runtime: 48 ms, faster than 97.50% of JavaScript online submissions for Merge Sorted Array.
-Memory Usage: 34 MB, less than 46.15% of JavaScript online submissions for Merge Sorted Array./
+/*STATS Runtime: 48 ms, faster than 97.50% of JavaScript online submissions for Merge Sorted Array.
+Memory Usage: 34 MB, less than 46.15% of JavaScript online submissions for Merge Sorted Array.*/
 
 var merge = function(nums1, m, nums2, n) {
     let first = m-1;
