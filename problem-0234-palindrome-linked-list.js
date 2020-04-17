@@ -31,13 +31,13 @@ var isPalindrome = function(head) {
     
 };
 
-/*Runtime: 60 ms, faster than 81.37% of JavaScript online submissions for Palindrome Linked List.
-Memory Usage: 39 MB, less than 100.00% of JavaScript online submissions for Palindrome Linked List.*/
-
 //Optimization
 //Find the midpoint by using a slow and a fast pointer
 //Reverse the second half of the linked list
 //Compare the first half to the second half reversed
+
+/*Runtime: 60 ms, faster than 81.37% of JavaScript online submissions for Palindrome Linked List.
+Memory Usage: 39 MB, less than 100.00% of JavaScript online submissions for Palindrome Linked List.*/
 
 var isPalindrome = function(head) {
     let slow = head
