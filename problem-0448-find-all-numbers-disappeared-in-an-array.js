@@ -20,7 +20,6 @@ Output:
 Memory Usage: 44 MB, less than 25.00% of JavaScript online submissions for Find All Numbers Disappeared in an Array.*/
 
 var findDisappearedNumbers = function(nums) {
-    //nums.sort(function(a,b){return a-b});
     let max = nums.length;
     let list = [];
     for (let i = 1; i <= max; i++) {
