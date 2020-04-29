@@ -11,8 +11,8 @@ Explanation: The process is like: 3 + 8 = 11, 1 + 1 = 2.
 Follow up:
 Could you do it without any loop/recursion in O(1) runtime?*/
 
-/*STATS Runtime: 76 ms, faster than 53.61% of JavaScript online submissions for Add Digits.
-Memory Usage: 36.3 MB, less than 33.33% of JavaScript online submissions for Add Digits.*/
+/*STATS Runtime: 64 ms, faster than 95.02% of JavaScript online submissions for Add Digits.
+Memory Usage: 36.2 MB, less than 66.67% of JavaScript online submissions for Add Digits.*/
 
 var addDigits = function(num) {
   
