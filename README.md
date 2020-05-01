@@ -4,7 +4,7 @@
 
 These are my solutions to various LeetCode problems.  You will find:
 
-1. Adescription of the problem 
+1. A description of the problem 
 2. The performance statistics of my solution
 3. My code for that solution.  
 
