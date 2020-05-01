@@ -1,5 +1,7 @@
 # LeetCode Javascript Solutions
 
+![picture of the app](https://github.com/kpolgar/leet-code/blob/master/leetcode.jpg)
+
 These are my solutions to various LeetCode problems.  You will find:
 
 1. Adescription of the problem 
