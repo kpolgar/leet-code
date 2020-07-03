@@ -44,13 +44,11 @@ var sortByBits = function(arr) {
     let map = {};
     for (let i = 0; i < arr.length; i++) {
         let binary = arr[i].toString(2)
-        let regex = /1/g
-        binary = binary.match(regex)
+        binary = binary.match(/1/g)
         binary = binary ? binary.length : 0;
         map[arr[i]] = binary;
     }
     return arr.sort((a, b) => map[a] - map[b] || a - b);
-    // return arr;
 };
 
 //Using Bitwise Operators
