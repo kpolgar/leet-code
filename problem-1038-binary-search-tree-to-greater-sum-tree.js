@@ -63,3 +63,21 @@ var bstToGst = function(root) {
     fixTree(root);
     return root;
 };
+
+/*STATS Runtime: 72 ms, faster than 62.13% of JavaScript online submissions for Binary Search Tree to Greater Sum Tree.
+Memory Usage: 37 MB, less than 8.33% of JavaScript online submissions for Binary Search Tree to Greater Sum Tree.*/
+
+var bstToGst = function(root) {
+    let sum = 0
+   function findSum(node){
+       if(!node){
+           return 0;
+       }
+       findSum(node.right);
+       node.val += sum;
+       sum = node.val;
+       findSum(node.left);
+   }
+   findSum(root);
+   return root;
+};
