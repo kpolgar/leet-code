@@ -59,3 +59,37 @@ var combinationSum = function(candidates, target, index=0, curr=[], combinations
     }
     return combinations;
 };
+
+
+/*STATS Runtime: 88 ms, faster than 79.77% of JavaScript online submissions for Combination Sum.
+Memory Usage: 39.3 MB, less than 72.94% of JavaScript online submissions for Combination Sum.*/
+
+var combinationSum = function(candidates, target) {
+    let combinations = [];
+    let index = 0;
+    let curr = [];
+    
+    function combo (candicates, target, index, curr, combinations) {
+        //found a combination
+        if (target === 0) {
+            combinations.push(curr.slice());
+            return;
+        }
+        //When we overshoot
+        if (target < 0) {
+            return;
+        }
+        //while there are still candidates to try
+        if (index < candidates.length) {
+            const value = candidates[index];
+            curr.push(value);
+            combo(candidates, target - value, index, curr, combinations)
+            curr.pop();
+            combo(candidates, target, index + 1, curr, combinations)
+        }
+    }
+    
+    combo(candidates, target, index, curr, combinations)
+    
+    return combinations;
+};
