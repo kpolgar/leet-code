@@ -6,6 +6,9 @@ TinyURL is a URL shortening service where you enter a URL such as https://leetco
 
 Design the encode and decode methods for the TinyURL service. There is no restriction on how your encode/decode algorithm should work. You just need to ensure that a URL can be encoded to a tiny URL and the tiny URL can be decoded to the original URL.*/
 
+/*STATS Runtime: 84 ms, faster than 87.33% of JavaScript online submissions for Encode and Decode TinyURL.
+Memory Usage: 39 MB, less than 11.67% of JavaScript online submissions for Encode and Decode TinyURL.*/
+
 /**
  * Encodes a URL to a shortened URL.
  *
