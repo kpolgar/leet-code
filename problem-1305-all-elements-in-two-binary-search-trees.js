@@ -36,7 +36,7 @@ Constraints:
 Each tree has at most 5000 nodes.
 Each node's value is between [-10^5, 10^5].*/
 
-/*Runtime: 188 ms, faster than 81.39% of JavaScript online submissions for All Elements in Two Binary Search Trees.
+/*STATS Runtime: 188 ms, faster than 81.39% of JavaScript online submissions for All Elements in Two Binary Search Trees.
 Memory Usage: 49.5 MB, less than 5.08% of JavaScript online submissions for All Elements in Two Binary Search Trees.*/
 
 var getAllElements = function(root1, root2) {
