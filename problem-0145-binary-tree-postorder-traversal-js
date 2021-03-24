@@ -1,0 +1,87 @@
+/*145. Binary Tree Postorder Traversal
+Medium
+
+Given the root of a binary tree, return the postorder traversal of its nodes' values.
+
+ 
+
+Example 1:
+
+
+Input: root = [1,null,2,3]
+Output: [3,2,1]
+Example 2:
+
+Input: root = []
+Output: []
+Example 3:
+
+Input: root = [1]
+Output: [1]
+Example 4:
+
+
+Input: root = [1,2]
+Output: [2,1]
+Example 5:
+
+
+Input: root = [1,null,2]
+Output: [2,1]
+ 
+
+Constraints:
+
+The number of the nodes in the tree is in the range [0, 100].
+-100 <= Node.val <= 100
+ 
+
+Follow up:
+
+Recursive solution is trivial, could you do it iteratively?*/
+
+/*STATS Runtime: 76 ms, faster than 80.80% of JavaScript online submissions for Binary Tree Postorder Traversal.
+Memory Usage: 38.7 MB, less than 44.96% of JavaScript online submissions for Binary Tree Postorder Traversal.*/
+
+var postorderTraversal = function(root) {
+    let arr = [];
+    
+    function dfs(node) {
+        if (!node) {
+            return []
+        }
+        if (node.left) {
+            dfs(node.left)
+        }
+        if (node.right) {
+            dfs(node.right)
+        }
+        arr.push(node.val)
+    }
+    dfs(root)
+    return arr;
+};
+
+//Iterative with reverse
+
+/*STATS Runtime: 68 ms, faster than 96.84% of JavaScript online submissions for Binary Tree Postorder Traversal.
+Memory Usage: 38.6 MB, less than 64.75% of JavaScript online submissions for Binary Tree Postorder Traversal.*/
+
+var postorderTraversal = function(root) {
+    let arr = [];
+    let temp = [root]
+    while(temp.length) {
+        let node = temp.shift()
+        if (!node) {
+            return []
+        }
+        if (node.left) {
+            temp.unshift(node.left)
+        }
+        if (node.right) {
+            temp.unshift(node.right)
+        }
+        arr.push(node.val)
+    }
+    return arr.reverse();
+};
