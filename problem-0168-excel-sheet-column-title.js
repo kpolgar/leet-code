@@ -47,3 +47,19 @@ var convertToTitle = function(n) {
     }
     return String.fromCharCode(...digits.map(d => d + 65));
 };
+
+/*STATS Runtime: 68 ms, faster than 98.17% of JavaScript online submissions for Excel Sheet Column Title.
+Memory Usage: 38.4 MB, less than 56.78% of JavaScript online submissions for Excel Sheet Column Title.*/
+
+var convertToTitle = function(n) {
+    const digits = [];
+    while (n > 0) {
+      digits.unshift((n - 1) % 26);
+      n = Math.trunc((n - 1) / 26);
+    }
+      
+      for (let i = 0; i < digits.length; i++) {
+          digits[i] = String.fromCharCode(digits[i] + 65)
+      }
+    return digits.join('')
+};
