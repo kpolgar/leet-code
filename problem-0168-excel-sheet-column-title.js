@@ -55,7 +55,7 @@ var convertToTitle = function(n) {
     const digits = [];
     while (n > 0) {
       digits.unshift((n - 1) % 26);
-      n = Math.trunc((n - 1) / 26);
+      n = Math.floor((n - 1) / 26);
     }
       
       for (let i = 0; i < digits.length; i++) {
